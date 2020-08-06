@@ -17,7 +17,7 @@ module.exports = proc => {
   }
   return {
     "presets": [
-      [ "@babel/preset-env", { targets: { node: "current" } } ]
+      [ "@babel/preset-env", { targets: { node: "current", browsers: ["last 2 versions"] } } ]
     ],
     plugins,
     "ignore": [
